@@ -5,14 +5,12 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: #33475B;
 }
 
 /* classi utility */
-.container {
-  width: 70%;
-  margin: auto;
-}
+
 /* /classi utility */
 
 /* header */
@@ -20,16 +18,130 @@ body {
   height: 80px;
 }
 
+/* nav-top */
 .nav-top {
   background-color: #F4F9FD;
+  padding: 0 15%;
+  border-bottom: 1px solid #33475B;
+  position: relative;
+}
+.nav-top .left-menu, .nav-top .right-menu {
+  width: 50%;
+  float: left;
+}
+.nav-top .left-menu {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.nav-top .right-menu {
+  text-align: right;
+  position: absolute;
+  right: 15%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#inline-divider {
+  border: 1px solid #33475B;
+  margin: 0 15px;
+}
+.nav-top .right-menu i {
+  color: #0EAAC1;
+}
+.nav-top .right-menu .btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  padding: .8em;
+  border-radius: 5px;
+}
+.nav-top .right-menu a.nobg {
+  color: #FE775A;
+  border: 1px solid #FE775A;
+}
+.nav-top .right-menu a.bg-or {
+  color: #fff;
+  background-color: #FE775A;
+  margin-right: 0;
+}
+.nav-top .right-menu > * {
+  margin: 0 10px;
 }
 
+/* nav-principal */
+.nav-principal {
+  padding: 0 15%;
+}
+.nav-principal > div {
+  width: 50%;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+.nav-principal .inline-menu li {
+  list-style: none;
+  display: inline-block;
+  padding-left: 15px;
+}
+.nav-principal .inline-menu li span {
+  padding-right: 10px;
+}
+.nav-principal .logo-block img {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.nav-principal .inline-menu ul {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* banner */
 .banner {
   height: 610px;
-  background-color: #fff4ef;
+  background-image: url(../img/jumbotron.png);
+  background-size: 100%;
+  background-position: 130% 33%;
+}
+.banner .title-box {
+  margin-left: 15%;
+  padding-top: 30px;
+  width: 560px;
+}
+.banner .title-box h1 {
+  font-size: 50px;
+  padding: 15px 0;
+}
+.banner .title-box p {
+  line-height: 1.5em;
+  padding: 15px 0;
+}
+.banner .title-box a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 1.5em 2.5em;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #FE775A;
+  margin: 15px 0;
+}
+.banner .title-box h5 {
+  font-weight: normal;
+  font-size: 12px;
+  padding: 15px 0;
 }
 
+/* header-bottom */
 .header-bottom {
   background-color: #AFEBE4;
+  border: 0 2px;
+  border-style: solid;
+  border-color: #33475B;
 }
+/* /header-bottom */
+
 /* /header */
