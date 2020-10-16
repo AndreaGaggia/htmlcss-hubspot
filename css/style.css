@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* classi utility */
+.container {
+  width: 70%;
+  margin: auto;
+}
+/* /classi utility */
+
+/* header */
+.nav-top, .nav-principal, .header-bottom {
+  height: 80px;
+}
+
+.nav-top {
+  background-color: #F4F9FD;
+}
+
+.banner {
+  height: 610px;
+  background-color: #fff4ef;
+}
+
+.header-bottom {
+  background-color: #AFEBE4;
+}
+/* /header */
