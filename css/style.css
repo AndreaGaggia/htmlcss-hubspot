@@ -366,7 +366,6 @@ span.big-number > span.plus-sign {
 
 /* customers */
 .customers {
-  height: 634px;
   padding: 0 15%;
   background-color: #fff;
 }
@@ -439,5 +438,72 @@ span.big-number > span.plus-sign {
 
 
 /* footer */
-
+footer {
+  padding: 35px 15%;
+  background-color: #32495B;
+  color: #CBD6E2;
+}
+.top-footer::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.service-list {
+  width: calc(100% / 4);
+  float: left;
+}
+.top-footer .service-list > h4 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.top-footer .service-list ul li {
+  font-size: 15px;
+  list-style: none;
+  margin: 18px 0;
+}
+.service-list ul li > a.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  background-color: #CBD6E2;
+  color: #32495B;
+  padding: 10px;
+}
+.service-list ul li i {
+  margin-right: 20px;
+}
+.bottom-footer {
+  padding: 40px 0;
+}
+.languages-row {
+  text-align: center;
+  border-bottom: 1px solid #CBD6E2;
+  padding-bottom: 8px;
+}
+.languages-row ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  font-size: 15px;
+}
+.very-bottom-row {
+  position: relative;
+  margin-bottom: 10px;
+}
+.very-bottom-row img {
+  width: 100px;
+}
+.very-bottom-row .credits {
+  color: #fff;
+}
+ul.legal li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 20px;
+}
+ul.legal {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 /* /footer */
