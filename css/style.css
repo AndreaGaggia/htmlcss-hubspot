@@ -7,6 +7,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: #33475B;
+  min-width: 1400px;
 }
 
 
@@ -36,6 +37,13 @@ body {
 .rig-border {
   border-right: 1px solid #fff;
 }
+.foot-link-style {
+  text-decoration: none;
+  color: #CBD6E2;
+}
+a.lm-btn:hover {
+  background-color: #ffbcac;
+}
 /* /classi utility */
 
 
@@ -59,6 +67,14 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+.nav-top .left-menu a {
+  text-decoration: none;
+  color: #33475B;
+}
+.nav-top .left-menu a:hover {
+  text-decoration: underline;
+  color: #0EAAC1;
 }
 .nav-top .right-menu {
   text-align: right;
@@ -89,6 +105,9 @@ body {
   color: #fff;
   background-color: #FE775A;
   margin-right: 0;
+}
+.nav-top .right-menu a.bg-or:hover {
+  background-color: #ffbcac;
 }
 .nav-top .right-menu > * {
   margin: 0 10px;
@@ -154,6 +173,9 @@ body {
   color: #fff;
   background-color: #FE775A;
   margin: 15px 0;
+}
+.banner .title-box a:hover {
+  background-color: #ffbcac;
 }
 .banner .title-box h5 {
   font-weight: normal;
@@ -420,6 +442,9 @@ span.big-number > span.plus-sign {
   background-color: #FE775A;
   margin: 35px 0;
 }
+.get-started-row a.btn:hover {
+  background-color: #ffbcac;
+}
 .get-started-row h5 {
   font-weight: normal;
   font-size: 12px;
@@ -461,6 +486,10 @@ footer {
   list-style: none;
   margin: 18px 0;
 }
+.top-footer .service-list ul li a:hover {
+  text-decoration: underline;
+  color: #0091ae;
+}
 .service-list ul li > a.btn {
   display: inline-block;
   text-decoration: none;
@@ -468,6 +497,11 @@ footer {
   background-color: #CBD6E2;
   color: #32495B;
   padding: 10px;
+}
+.service-list ul li > a.btn:hover {
+  color: #32495B;
+  background-color: rgba(203, 214, 226, 0.8);
+  text-decoration: none;
 }
 .service-list ul li i {
   margin-right: 20px;
