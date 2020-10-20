@@ -48,6 +48,9 @@ a.lm-btn:hover {
 
 
 /* header */
+header {
+  background-color: #FFF3ED;
+}
 .nav-top, .nav-principal, .header-bottom {
   height: 80px;
 }
@@ -58,10 +61,6 @@ a.lm-btn:hover {
   padding: 0 15%;
   border-bottom: 1px solid #33475B;
   position: relative;
-}
-.nav-top .left-menu, .nav-top .right-menu {
-  width: 50%;
-  float: left;
 }
 .nav-top .left-menu {
   position: absolute;
@@ -116,6 +115,7 @@ a.lm-btn:hover {
 /* nav-principal */
 .nav-principal {
   padding: 0 15%;
+  background-color: #fff;
 }
 .nav-principal > div {
   width: 50%;
@@ -153,14 +153,23 @@ a.lm-btn:hover {
 
 /* banner */
 .banner {
-  height: 610px;
   background-image: url(../img/jumbotron.png);
-  background-size: cover;
-  background-position: 130% 33%;
+  background-size: contain;
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+.banner::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 80px;
+  background-color: #AFEBE4;
+  border-top: 3px solid #33475B;
+  border-bottom: 3px solid #33475B;
 }
 .banner .title-box {
   margin-left: 15%;
-  padding-top: 30px;
+  padding-top: 45px;
   width: 560px;
 }
 .banner .title-box h1 {
@@ -188,6 +197,7 @@ a.lm-btn:hover {
   font-weight: normal;
   font-size: 12px;
   padding: 15px 0;
+  margin-bottom: 180px;
 }
 
 /* header-bottom */
@@ -346,7 +356,7 @@ main {
 
 /* statistics */
 .statistics {
-  background-color: #01B7AB;
+  background-image: linear-gradient(90deg, #09A3BD, #0FB5A2);
   padding: 0 15%;
   color: #fff;
   text-align: center;
@@ -475,6 +485,8 @@ footer {
   background-color: #32495B;
   color: #CBD6E2;
 }
+
+/* /top-footer */
 .top-footer::after {
   content: "";
   display: table;
@@ -513,6 +525,9 @@ footer {
 .service-list ul li i {
   margin-right: 20px;
 }
+/* /top-footer */
+
+/* bottom-footer */
 .bottom-footer {
   padding: 40px 0;
 }
@@ -547,4 +562,6 @@ ul.legal {
   right: 0;
   top: 0;
 }
+/* /bottom-footer */
+
 /* /footer */
